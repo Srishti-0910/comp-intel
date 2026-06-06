@@ -222,7 +222,7 @@ export default function ComparePage() {
                       <XAxis dataKey="name" tick={{ fontSize: 11 }} />
                       <YAxis tick={{ fontSize: 11 }} />
                       <Tooltip
-                        formatter={(v: any) => [`₹${v}L`, ""]}
+                        formatter={(value: any) => [`₹${value}L`, ""]}
                         contentStyle={{ borderRadius: "8px", fontSize: "12px" }}
                       />
                       {stats.map((s, i) => (
