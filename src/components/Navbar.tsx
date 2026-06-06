@@ -6,11 +6,10 @@ import { clsx } from "clsx";
 import { TrendingUp, BarChart2, GitCompare, BookOpen } from "lucide-react";
 
 const links = [
-  { href: "/", label: "Salaries", icon: BarChart2 },
+  { href: "/salaries", label: "Salaries", icon: BarChart2 },
   { href: "/compare", label: "Compare", icon: GitCompare },
   { href: "/research", label: "Research", icon: BookOpen },
 ];
-
 export default function Navbar() {
   const pathname = usePathname();
 
