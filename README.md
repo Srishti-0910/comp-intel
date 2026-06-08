@@ -1,4 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## CompIntel
+India's Compensation Intelligence Platform, compare real salary data across top tech companies by role, level, and location.
+
+## Features
+- Real salary data with base, bonus & stock breakdown
+- Compare up to 3 companies side by side
+- Individual company pages with detailed stats
+- Filter by role, level, location & company
+- Visual bar & radar charts
+- Covers 10+ top Indian tech companies
+
+## Tech Stack
+- **Next.js** — Framework
+- **React** — UI Library
+- **TypeScript** — Language
+- **TailwindCSS** — Styling
+- **Recharts** — Charts & Visualizations
 
 ## Getting Started
 
@@ -6,25 +22,25 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
+- Vercel
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Architecture
+User → Next.js Frontend → Static Data Layer → Recharts Visualization → UI Render
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Role/Level/Location Filters → Filter Logic → Filtered Results → Table & Charts
 
-## Learn More
+## How It Works
+1. User visits CompIntel and applies filters (role, level, location, company)
+2. Filter logic processes the static salary dataset
+3. Matching results are displayed in the salary table
+4. Charts & radar graphs render the compensation breakdown
+5. User can compare up to 3 companies side by side
 
-To learn more about Next.js, take a look at the following resources:
+## Live Demo 
+ https://comp-intel-three.vercel.app
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Author 
+Srishti Sachan
