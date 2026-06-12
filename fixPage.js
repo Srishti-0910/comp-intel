@@ -1,4 +1,6 @@
-"use client";
+const fs = require('fs');
+
+const content = `"use client";
 
 import { useState, useEffect } from "react";
 import { fetchSalaries } from "@/lib/api";
@@ -153,4 +155,7 @@ export default function Home() {
       </div>
     </main>
   );
-}
+}`;
+
+fs.writeFileSync('src/app/salaries/page.tsx', content);
+console.log('Fixed salaries page!');

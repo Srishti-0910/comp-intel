@@ -1,4 +1,6 @@
-"use client";
+const fs = require('fs');
+
+const content = `"use client";
 
 import Link from "next/link";
 import { useState } from "react";
@@ -112,4 +114,7 @@ export default function SalaryTable({ data }: Props) {
       </table>
     </div>
   );
-}
+}`;
+
+fs.writeFileSync('src/components/SalaryTable.tsx', content);
+console.log('Fixed SalaryTable!');
